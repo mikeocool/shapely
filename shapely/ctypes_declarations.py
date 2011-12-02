@@ -259,6 +259,9 @@ def prototype(lgeos, geosVersion):
         lgeos.GEOSUnionCascaded.restype = ctypes.c_void_p
         lgeos.GEOSUnionCascaded.argtypes = [ctypes.c_void_p]
 
+        lgeos.GEOSUnaryUnion.restype = ctypes.c_void_p
+        lgeos.GEOSUnaryUnion.argtypes = [ctypes.c_void_p]
+
     # 1.6.0
     if geosVersion >= (1, 6, 0):
         # Linear referencing features aren't found in versions 1.5,
